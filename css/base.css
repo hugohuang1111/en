@@ -103,6 +103,13 @@ footer {
  * sections of docs content.
  */
 
+/* SDKBox start */
+.bs-sidebar {
+    height: 80%;
+    overflow: scroll;
+}
+/* SDKBox end */
+
 /* By default it's not affixed in mobile views, so undo that */
 .bs-sidebar.affix {
     position: static;
@@ -148,6 +155,12 @@ footer {
     padding-bottom: 3px;
     padding-left: 30px;
     font-size: 90%;
+}
+
+.sub-sidebar {
+ padding: 0 0 0 10px;
+ border-left: 1px solid #888;
+ margin-left: 5px;
 }
 
 /* Show and affix the side nav when space allows it */
@@ -272,4 +285,13 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+.non-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.dropdown-menu .dropdown-menu {
+ max-height: 360px;
+  overflow: auto;
 }
